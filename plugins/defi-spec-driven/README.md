@@ -29,11 +29,10 @@ Modifications to existing codebases require mapping deployed contract state, exi
 
 ## Installation
 
-```bash
-git clone git@github.com:melanke/defi-spec-driven.git ~/.claude/skills/defi-spec-driven
 ```
-
-Restart Claude Code. The skill loads automatically from `~/.claude/skills/`.
+/plugin marketplace add melanke/defi-builder-skills
+/plugin install defi-spec-driven@defi-builder-skills
+```
 
 ## Usage
 

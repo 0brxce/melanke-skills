@@ -18,8 +18,8 @@ A marketplace of [Claude Code](https://claude.com/claude-code) skills for design
 ## Install a skill
 
 ```
-/plugin install defi-protocol-discovery@melanke
-/plugin install defi-spec-driven@melanke
+/plugin install defi-protocol-discovery@defi-builder-skills
+/plugin install defi-spec-driven@defi-builder-skills
 ```
 
 ## License

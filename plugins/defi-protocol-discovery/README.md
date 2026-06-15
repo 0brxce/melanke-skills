@@ -52,7 +52,7 @@ Install via the [`defi-builder-skills`](https://github.com/melanke/defi-builder-
 
 ```
 /plugin marketplace add melanke/defi-builder-skills
-/plugin install defi-protocol-discovery@melanke
+/plugin install defi-protocol-discovery@defi-builder-skills
 ```
 
 ## License
