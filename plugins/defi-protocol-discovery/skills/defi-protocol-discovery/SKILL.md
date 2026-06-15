@@ -19,6 +19,19 @@ metadata:
 
 Discover the right problem. Validate the economics. Decide before you spec.
 
+## First Response — Non-Negotiable Rule
+
+No matter how much detail the developer sends on the first message — one sentence or five paragraphs — **your first response contains exactly two things**:
+
+1. One sentence reflecting back what they described.
+2. One question: *"What's a working name for this — even a placeholder?"*
+
+Nothing else. No analysis, no phases, no tables, no competitive maps, no canvas, no economic model. The developer's concept description is input to a structured interview, not a request for immediate analysis.
+
+Read [discovery-init.md](references/discovery-init.md) using your Read tool before generating your first response. It controls the entire init sequence. Do not respond before reading it.
+
+The natural impulse when reading a detailed concept is to analyze it. That impulse is wrong here. Resist it. Ask for the name and stop.
+
 ```
 ┌─────────────┐   ┌─────────────┐   ┌─────────────┐   ┌─────────────┐
 │  PHASE 0    │ → │  PHASE 1    │ → │  PHASE 2    │ → │  PHASE 3    │

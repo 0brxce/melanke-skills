@@ -2,6 +2,8 @@
 
 > **Language rule**: All discovery documents (any `.md` file written to `.discovery/`) are always in English — regardless of the conversation language.
 
+**You are reading this file before generating your first response. Good. Now follow the steps below exactly — one step at a time, one question per response.**
+
 Create the `.discovery/` directory tree and `STATE.md`. This step runs before any phase begins, regardless of entry profile. Do not begin Phase 0 or Phase 1 before STATE.md exists.
 
 ## Scope of this phase
