@@ -50,23 +50,26 @@ Five things that make DeFi discovery different from generic startup validation:
 
 ## Entry Routing
 
-At initialization, detect the user's starting profile from their first message and route without asking which profile they are:
+At initialization, **always load [discovery-init.md](references/discovery-init.md) first**, regardless of profile. Discovery init creates STATE.md and the `.discovery/` directory, then routes to the appropriate phase. Do not begin Phase 0 or Phase 1 before init is complete.
+
+During init, classify the developer's profile from their first message — never ask which profile they are:
 
 **Profile A — Concrete idea**: User describes a specific protocol concept.
-→ Skip Phase 0. Load [idea-sharpening.md](references/idea-sharpening.md) and enter Phase 1.
+→ Init, then enter Phase 1 (skip Phase 0). Load [idea-sharpening.md](references/idea-sharpening.md).
 
 **Profile B — Vague direction**: User knows a space or segment but has no specific idea yet.
-→ Run Phase 0 in *focused mode* (anchored to stated space). Load [opportunity-discovery.md](references/opportunity-discovery.md).
+→ Init, then enter Phase 0 in *focused mode* (anchored to stated space). Load [opportunity-discovery.md](references/opportunity-discovery.md).
 
 **Profile C — Open exploration**: User wants to build in DeFi but has no direction.
-→ Run Phase 0 in *open mode* (systematic opportunity scan). Load [opportunity-discovery.md](references/opportunity-discovery.md).
+→ Init, then enter Phase 0 in *open mode* (systematic opportunity scan). Load [opportunity-discovery.md](references/opportunity-discovery.md).
 
-If the first message already clearly places the developer in Profile A, B, or C — route immediately without asking. If the first message doesn't contain enough signal to classify the profile, ask: *"Tell me about what you want to build — or about where you're thinking of building, if you don't have a specific idea yet."*
+If the first message doesn't contain enough signal to classify the profile, discovery-init will ask: *"Tell me about what you want to build — or about where you're thinking of building, if you don't have a specific idea yet."*
 
 ## Phase Overview
 
 | Phase | Name | Mode | Reference | Output file |
 |---|---|---|---|---|
+| — | Discovery Init | Always — before any phase | [discovery-init.md](references/discovery-init.md) | `STATE.md` |
 | 0 | Opportunity Discovery | Optional (profiles B and C) | [opportunity-discovery.md](references/opportunity-discovery.md) | `OPPORTUNITIES.md` |
 | 1 | Idea Sharpening | Always | [idea-sharpening.md](references/idea-sharpening.md) | `PROBLEM.md` |
 | 2 | Landscape & Analogues | Always | [landscape.md](references/landscape.md) | `LANDSCAPE.md` |
@@ -79,7 +82,7 @@ If the first message already clearly places the developer in Profile A, B, or C 
 
 Note: required phase outputs (files, gate items) are not pivots. If a developer tries to advance without completing a required output, complete the output before advancing — do not ask permission. Reserve pivot logging for concept direction changes, not for incomplete deliverables.
 
-STATE.md is created at initialization using the template in [state-management.md](references/state-management.md). Load state-management.md at initialization to create STATE.md from the template, then keep it loaded for all STATE.md updates throughout the session.
+STATE.md is created during discovery-init. The template lives in [state-management.md](references/state-management.md) — load it when updating STATE.md during the session.
 
 ## Project File Structure
 
@@ -121,7 +124,8 @@ STATE.md is created at initialization. All other files are created when their ph
 
 | Trigger | Phase | Reference |
 |---|---|---|
-| discover protocol, what should I build, defi ideation | Init → Phase 0 | [opportunity-discovery.md](references/opportunity-discovery.md) |
+| any first invocation | Init (always first) | [discovery-init.md](references/discovery-init.md) |
+| discover protocol, what should I build, defi ideation | Phase 0 (after init) | [opportunity-discovery.md](references/opportunity-discovery.md) |
 | validate idea, sharpen idea, idea sharpening | Phase 1 | [idea-sharpening.md](references/idea-sharpening.md) |
 | landscape, competitive map, analogues | Phase 2 | [landscape.md](references/landscape.md) |
 | defi canvas, lean canvas, value proposition | Phase 3 | [canvas.md](references/canvas.md) |

@@ -6,6 +6,8 @@ Transform a raw idea or selected concept into a precise, defensible problem stat
 
 `PROBLEM.md` produced here is the foundation that all subsequent phases build on. A vague problem statement produces a vague canvas, a vague economic model, and eventually a vague protocol. Push until the problem is crisp.
 
+**One step at a time**: each step ends with a question or a check-in. After asking, stop — do not proceed to the next step in the same response. The developer's answer shapes the next question; batching steps defeats the purpose.
+
 ## Entry modes
 
 **From Phase 0**: the concept hypothesis is already formed. Phase 1's job is to challenge it — find the assumption beneath the hypothesis that's most likely to be wrong, and test it through the techniques below. Begin by reading the Selected Concept section of OPPORTUNITIES.md and using the "Primary weak point carried into Phase 1" field as the first assumption to challenge — do not go back to the OPP-N candidate entry directly; the Selected Concept section is the authoritative handoff point. Frame JTBD Q1 (the trigger situation question) to probe that specific weak point — Q1 is the right level because it reveals whether the situation where the problem occurs is as described. Q2 and Q3 should follow from Q1's answer; do not pre-constrain them with the Phase 0 framing. If Q1's answer suggests the weak point was wrong, let Q2 and Q3 follow naturally from what Q1 revealed.
@@ -22,7 +24,7 @@ If the developer describes a mechanism ("I want to build a vault that auto-rebal
 
 If the developer's first message described both a mechanism and a clear problem statement, confirm the problem rather than re-asking: *"You described the problem as [X] — is that the core of it, or is there a more precise framing you'd use?"* Do not re-ask the extraction question if the problem is already stated.
 
-This step is complete when the developer can state the problem independently of the solution. If they can't, stay here.
+This step is complete when the developer can state the problem independently of the solution. If they can't, stay here. **Ask and stop** — do not proceed to Step 2 in the same response.
 
 **Mechanism feasibility check**: once the problem is extracted, flag whether the mechanism described is confirmed (existing infrastructure, proven approach) or a hypothesis. Two distinct types require different logging:
 
@@ -66,15 +68,18 @@ Example:
 
 At depth 3–5, the problem either becomes more specific (good) or reveals that the original framing was a symptom of something the developer isn't actually solving (important finding — log as OQ or trigger a pivot back).
 
+Present the root cause chain to the developer — 3–5 bullets leading to the root. Ask: *"Does that root cause match your read of the problem — or is there a different layer you'd call the real root?"* **Wait for confirmation before moving to Step 4.**
+
 ---
 
 ## Step 4 — Segment sharpening
 
 A problem that belongs to "everyone" belongs to no one. Identify the most specific segment that has this problem acutely.
 
-Ask:
-- *"Who has this problem most acutely — and would they adopt a protocol to solve it first?"*
-- *"Is the primary user a human end-user, or a protocol/DAO (which integrates your protocol as infrastructure)?"*
+Ask these two questions one at a time — wait for the answer to the first before asking the second:
+
+1. *"Who has this problem most acutely — and would they adopt a protocol to solve it first?"*
+2. *"Is the primary user a human end-user, or a protocol/DAO (which integrates your protocol as infrastructure)?"*
 
 The distinction between end-user and protocol-as-customer changes channels, pricing, bootstrapping strategy, and governance design. Make it explicit here.
 
