@@ -1,5 +1,5 @@
 ---
-name: melanke:defi-protocol-discovery
+name: defi-protocol-discovery
 description: DeFi protocol opportunity discovery and viability assessment — from raw idea to go/no-go decision
 allowed-tools: Read Write Bash WebSearch WebFetch
 ---
