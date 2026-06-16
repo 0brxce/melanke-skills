@@ -197,7 +197,24 @@ Condition # corresponds to the numbered list in Kill Criteria above.
 
 ---
 
-## Step 6 — Session README
+## Step 6 — Finalize STATE.md
+
+Before producing the README, bring STATE.md fully up to date. A STATE.md left with mid-session notes and open items is not a valid session record.
+
+Work through this checklist and update the file:
+
+1. **Phase History** — mark Phase 6 as complete (`[x]`). All phases run in this session should be checked.
+2. **Open Questions** — every OQ must be either `CLOSED [resolution]` or `ACCEPTED-AMBIGUITY [assumption, risk level]`. If any OQ is still `OPEN`, resolve it now or convert it. No OQ may remain open after Phase 6.
+3. **Decisions** — log the final verdict as a decision: `DEC-N: [GO / CONDITIONAL GO / NO-GO] — [one-sentence rationale].`
+4. **Current Phase Notes** — replace active working notes with a one-line summary: `Phase 6 complete. Verdict: [verdict].`
+5. **Expansion Queue** — every queued item should either have been addressed in its target phase or be explicitly noted as `dropped — [reason]` (e.g., "dropped — no-go before phase reached").
+6. **Last Session block** — if a handoff block exists from a prior pause, remove it or replace it with: `Session complete — see README.md for summary.`
+
+Do not ask the developer for input during this step. Read the current STATE.md, apply the updates, and write the file.
+
+---
+
+## Step 7 — Session README
 
 After DECISION.md is complete, produce `.discovery/README.md`. This is the entry point for anyone resuming or reviewing the session — it states the verdict, summarizes what was found, and explains what each document contains and when to consult it.
 
