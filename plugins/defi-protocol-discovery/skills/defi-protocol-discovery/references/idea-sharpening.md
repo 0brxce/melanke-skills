@@ -131,11 +131,14 @@ Example: "Protect LP yield from directional price moves without exiting the posi
 
 ## Mechanism Sketch
 [One sentence: how a protocol could address the root cause]
-Note: this is a hypothesis, not a commitment. It will be tested in Phase 3.
 
 ## Open Questions
-[Any unresolved questions about the problem definition, logged from this phase]
+See STATE.md
 ```
+
+_Note on Mechanism Sketch_: this field is a hypothesis, not a commitment — it anchors the problem to a tractable solution space and will be challenged in Phase 3. Do not write this note into the file; it is guidance for this step only.
+
+_Note on Open Questions_: OQs are tracked exclusively in STATE.md with their blocking phase, status, and resolution. Do not duplicate them in PROBLEM.md — the static pointer above is the only entry this section needs.
 
 ---
 
