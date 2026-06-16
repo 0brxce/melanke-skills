@@ -198,8 +198,10 @@ Timeline: [weeks/months]
 [One paragraph on long-term sustainability]
 
 ## Open Questions
-[Any unresolved canvas fields, logged from this phase]
+See STATE.md
 ```
+
+_Note on Open Questions_: OQs are tracked exclusively in STATE.md. Do not duplicate them here — the static pointer above is the only entry this section needs.
 
 ---
 
@@ -214,4 +216,6 @@ Gate check:
    (a) Is the minimum viable TVL estimated and filled in the canvas? If not, stay.
    (b) If the mechanism is token emissions only: is there at least an order-of-magnitude estimate of TVL decay when emissions end, based on a Phase 2 analogue? If no analogue was identified and no decay estimate exists, flag as OQ blocking Phase 4 and stay. A plan that names token emissions but does not address post-emissions TVL retention defers the hardest question to Phase 4 without giving Phase 4 any inputs to work from — that is not credible.
 
-When satisfied: *"Canvas closed. Moving to Phase 4 — Economic Viability, where we stress-test the revenue model and TVL scenarios."*
+When satisfied: update `PROBLEM.md` — replace the `## Mechanism Sketch` section content with `See CANVAS.md → Unique Mechanism`. The hypothesis served its purpose in Phase 1; the authoritative version now lives in the canvas. Do not delete the section heading — replace only the content.
+
+Then close: *"Canvas closed. Moving to Phase 4 — Economic Viability, where we stress-test the revenue model and TVL scenarios."*

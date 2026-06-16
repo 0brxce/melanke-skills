@@ -187,8 +187,10 @@ If no token: note whether a token is planned and when, or confirm it's intention
 - Emission schedule summary: [total supply, year 1 dilution %]
 
 ## Open Questions
-[Economic uncertainties logged as OQs from this phase]
+See STATE.md
 ```
+
+_Note on Open Questions_: OQs are tracked exclusively in STATE.md. Do not duplicate them here — the static pointer above is the only entry this section needs.
 
 ---
 
