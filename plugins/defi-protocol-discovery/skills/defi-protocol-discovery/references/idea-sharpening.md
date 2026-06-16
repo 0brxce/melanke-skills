@@ -14,6 +14,8 @@ Transform a raw idea or selected concept into a precise, defensible problem stat
 
 **Direct entry (Profile A)**: the developer has a raw idea. Phase 1 must first extract the problem (not the solution) before any sharpening can happen. Many developers arrive with a solution in mind and a problem they've only loosely defined. The first move is always: *separate problem from solution*.
 
+**Profile A shortcut — mine the initial message**: the developer's first message often already contains implicit answers to Steps 1–4. Before asking each question open-ended, check whether the answer can be inferred from what they wrote. If it can, propose it and ask for confirmation rather than asking from scratch. This respects the detail they already provided and makes the session faster. Format: *"Baseado no que você descreveu, [proposed answer] — correto, ou tem algo que você ajustaria?"* Only ask open-ended when there is genuinely not enough signal in the initial message.
+
 ---
 
 ## Step 1 — Separate problem from solution

@@ -193,6 +193,12 @@ Every question includes one clause explaining what the answer determines — inl
 
 When context points to an answer, recommend and let the developer confirm. Only present options when the decision is genuinely open.
 
+This applies especially when the developer already provided a detailed first message: **mine it for implicit answers before asking from scratch**. If the answer to the current question can be reasonably inferred from what the developer already said, propose it rather than asking an open question:
+
+*"Baseado no que você descreveu, o gatilho seria [X] — está correto, ou você frasearia de outra forma?"*
+
+A proposed answer the developer can confirm or tweak in one word is better than an open question they have to answer from scratch. Only ask open-ended when there is genuinely not enough information to suggest anything.
+
 ### 6. Preview before large outputs
 
 Before producing a full file: one sentence stating what it will capture and any unconfirmed inferences. After producing: name 2–3 specific things needing the developer's eyes — inferred decisions, values needing confirmation, or choices with downstream consequences.
