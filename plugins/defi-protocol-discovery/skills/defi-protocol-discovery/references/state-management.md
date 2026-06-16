@@ -6,6 +6,8 @@ Reference for maintaining STATE.md throughout the discovery process.
 
 Create `.discovery/project/STATE.md` at initialization with this template:
 
+> **Language rule**: every field in this file — decisions, OQ text, expansion queue entries, pivot log, handoff notes — must be written in English, regardless of the conversation language.
+
 ```markdown
 # Discovery State
 

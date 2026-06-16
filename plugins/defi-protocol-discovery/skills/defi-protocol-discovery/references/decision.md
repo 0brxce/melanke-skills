@@ -151,6 +151,8 @@ Example: "A fixed-rate lending protocol for protocol treasuries on Ethereum main
 
 ## DECISION.md Template
 
+> **Language rule**: every field in this file — kill criteria, synthesis scores, rationale, Protocol Brief — must be written in English, regardless of the conversation language.
+
 ```markdown
 # Go / No-Go Decision
 
@@ -191,4 +193,47 @@ Condition # corresponds to the numbered list in Kill Criteria above.
 ---
 
 [Protocol Brief — if GO or CONDITIONAL GO]
+```
+
+---
+
+## Step 6 — Session README
+
+After DECISION.md is complete, produce `.discovery/README.md`. This is the entry point for anyone resuming or reviewing the session — it states the verdict, summarizes what was found, and explains what each document contains and when to consult it.
+
+> **Language rule**: this file is a discovery document — write it in English regardless of conversation language.
+
+Template:
+
+```markdown
+# [Protocol Name] — Discovery Session
+
+**Verdict**: [GO / CONDITIONAL GO / NO-GO]
+**Date**: [session date]
+**Profile**: [A — Concrete idea / B — Vague direction / C — Open exploration]
+
+## Summary
+[2–3 sentences: what concept was explored, the key finding from the discovery process, and the one-line rationale for the verdict.]
+
+## Documents
+
+| File | Phase | What it contains | When to use |
+|---|---|---|---|
+| `project/STATE.md` | All | Session log: decisions, open questions, expansion queue, pivot history | Resuming a paused session; auditing decisions; checking unresolved OQs |
+| `opportunities/OPPORTUNITIES.md` | 0 | Ranked opportunity shortlist with scoring and selection rationale | Comparing this concept against alternatives; re-evaluating the problem space |
+| `problem/PROBLEM.md` | 1 | Validated problem statement — segment, JTBD, root cause, mechanism sketch | Any conversation about what problem is being solved and for whom |
+| `landscape/LANDSCAPE.md` | 2 | Competitive map, analogues, antilogs, early adopter targets | Competitive positioning, partnership outreach, investor Q&A on differentiation |
+| `canvas/CANVAS.md` | 3 | DeFi-adapted lean canvas — UVP, mechanism, channels, revenue streams | Product decisions, investor pitches, mechanism design discussions |
+| `economics/ECONOMICS.md` | 4 | Revenue model, TVL scenarios, unit economics, bootstrap path | Tokenomics, fundraising, go-to-market budget decisions |
+| `risks/RISKS.md` | 5 | Ranked assumptions, death spirals, validation plan | Audit preparation, security review scope, assumption tracking |
+| `decision/DECISION.md` | 6 | Go/no-go verdict + Protocol Brief (if go) | Handoff to defi-spec-driven, investor memos, team alignment |
+
+_Omit rows for files not produced in this session (e.g., OPPORTUNITIES.md is absent for Profile A sessions that did not run Phase 0)._
+
+## Next Step
+[If GO or CONDITIONAL GO]
+Start `defi-spec-driven` with the handoff note from `decision/DECISION.md` → Protocol Brief → Handoff Note field.
+
+[If NO-GO]
+Re-evaluate starting from Phase [N] once [the specific kill criterion condition] changes.
 ```
