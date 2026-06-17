@@ -67,14 +67,16 @@ At initialization, **always load [discovery-init.md](references/discovery-init.m
 
 During init, classify the developer's profile from their first message — never ask which profile they are:
 
-**Profile A — Concrete idea**: User describes a specific protocol concept.
+**Profile A — Concrete idea**: User describes a specific protocol concept with a mechanism or problem in mind.
 → Init, then enter Phase 1 (skip Phase 0). Load [idea-sharpening.md](references/idea-sharpening.md).
 
-**Profile B — Vague direction**: User knows a space or segment but has no specific idea yet.
+**Profile B — Vague direction**: User knows a space, domain, or segment but has no specific idea yet.
 → Init, then enter Phase 0 in *focused mode* (anchored to stated space). Load [opportunity-discovery.md](references/opportunity-discovery.md).
 
-**Profile C — Open exploration**: User wants to build in DeFi but has no direction.
+**Profile C — Open exploration**: User wants to build but has no direction.
 → Init, then enter Phase 0 in *open mode* (systematic opportunity scan). Load [opportunity-discovery.md](references/opportunity-discovery.md).
+
+**Profile A vs B disambiguation — critical**: A user who names a domain or space (e.g., "AI Agents and DevOps", "something for LPs", "lending on Solana") but signals they want to *explore ideas* — using phrases like "think of ideas", "brainstorm", "looking for ideas", "want to explore what I could build", or equivalents — is **Profile B, not Profile A**. A domain name is not a concept. Profile A requires a specific mechanism or problem hypothesis, not just a named area of interest. When the profile is still ambiguous after reading the message, ask the user directly: *"Do you have a specific concept in mind, or would you like to explore what to build within [space] first?"*
 
 If the first message doesn't contain enough signal to classify the profile, discovery-init will ask: *"Tell me about what you want to build — or about where you're thinking of building, if you don't have a specific idea yet."*
 

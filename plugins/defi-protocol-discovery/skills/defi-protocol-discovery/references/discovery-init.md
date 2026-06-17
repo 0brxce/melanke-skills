@@ -30,6 +30,8 @@ Based on the developer's first message, classify their profile:
 
 Do not ask the developer which profile they are — classify from context.
 
+**Profile A vs B disambiguation — critical rule**: A developer who names a domain, technology, space, or segment (e.g., "AI Agents and DevOps", "something for LPs", "yield farming", "lending on Solana") but expresses a desire to *explore*, *think of*, *brainstorm*, or *look for* ideas is **Profile B — not Profile A**. Profile A requires a specific concept or mechanism, not just a domain. If the developer's message contains any of the following signals — "want to think of ideas", "exploring what to build", "looking for ideas", "want to brainstorm", "haven't decided what to build", "want to see what I could build", "figuring out what to build", or equivalents in any language — classify as Profile B (or C if no domain is stated), regardless of how specific the domain sounds. A domain name is not an idea. When the profile is still ambiguous after reading the message, ask the developer directly: *"Do you have a specific concept in mind, or would you like to explore what to build within [space] first?"*
+
 **Send one message** that: (1) reflects back your reading of their starting point in 1–2 sentences, and (2) asks exactly one question:
 
 **Profile A:**
