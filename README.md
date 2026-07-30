@@ -2,6 +2,8 @@
 
 A marketplace of [Claude Code](https://claude.com/claude-code) skills for designing and building DeFi protocols from scratch.
 
+[![Featured in Web3 Security Tools Hub](https://img.shields.io/badge/Featured%20in-Web3%20Security%20Tools%20Hub-blue)](https://github.com/pashov/ai-web3-security#solidity--evm)
+
 ## Add this marketplace
 
 ```
